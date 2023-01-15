@@ -17,7 +17,7 @@ app.use('/public', express.static(path.join(__dirname, '/public'))); // serve st
 // Importing other routes
 app.use('/user', routes.UserRouter);
 app.use('/song', routes.SongRouter);
-app.use('/artist', routes.ArtistRouter)
+app.use('/artist', routes.ArtistRouter);
 
 app.get('/', (req, res) => { res.json("Hello"); }); // we make a request to the homepage, and the server displays hello to the browser
 
