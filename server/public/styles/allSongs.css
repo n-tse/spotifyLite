@@ -7,7 +7,8 @@ li {
 }
 
 #like-button {
-  background-color: #1DB954;
+  /* background-color: #1DB954; */
+  background-color: #d8363a;
   color: white;
   border-radius: 6px;
 }
