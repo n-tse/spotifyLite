@@ -25,12 +25,12 @@ body {
   }
   }
 
-.btn-createNew {
+#btn-createNew {
   border-radius: 3px;
   border-width: 1px;
 }
 
-.btn-createNew:hover {
+#btn-createNew:hover {
   border-radius: 3px;
   border-width: 1px;
   color: white;

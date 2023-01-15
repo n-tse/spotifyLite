@@ -46,11 +46,10 @@
     
                       <div>
                         <p class="mb-0 me-2">Don't have an account?</p>
-                        <button type="button" class="btn-createNew">Create new</button>
+                        <!-- <button type="button" id="btn-createNew" onclick={submit}><a href="/allSongs" class="href">Create new</a></button> -->
+                        <button type="button" id="btn-createNew" onclick="redirectAllSongs()">Create new</button>
                       </div>
-    
                     </form>
-    
                   </div>
                 </div>
               </div>
@@ -59,5 +58,10 @@
         </div>
       </div>
     </section>
+    <script>
+      function redirectAllSongs() {
+        window.location = "./allSongs";
+      }
+    </script>
   </body>
 </html>
