@@ -1,7 +1,6 @@
 const mongoose = require('mongoose'); // import mongoose library so we can create schemas
 const Schema = mongoose.Schema;
 const refType = Schema.Types.ObjectId;
-const passportLocalMongoose = require('passport-local-mongoose');
 mongoose.set('strictQuery', true);
 
 const UserSchema = new Schema({
@@ -12,10 +11,6 @@ const UserSchema = new Schema({
   followedArtists: [{ type: refType, ref: "Artist" }]
 });
 
-
-
 const User = mongoose.model("User", UserSchema, "User");
-
-User.plugin(passportLocalMongoose);
 
 module.exports = User;
