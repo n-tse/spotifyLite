@@ -65,6 +65,7 @@ async function run() {
     }
 
     const insertNewSongs = await Song.insertMany(newSongs);
+    console.log("all songs: ", insertNewSongs);
 
   } catch (err) {
     console.log(err);
