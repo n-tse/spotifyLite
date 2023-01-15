@@ -60,7 +60,7 @@ async function run() {
     console.log("updatedUser =", updatedUser);
 
     let newSongs = [];
-    for (let i = 6; i <= 10; i++) {
+    for (let i = 6; i <= 15; i++) {
       newSongs.push({ title: `Song${i}`, language: `Language${i}`, genre: `Genre${i}`});
     }
 
