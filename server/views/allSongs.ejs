@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SpotifyLite</title>
+    <link rel="stylesheet" href="/public/styles/allSongs.css">
+  </head>
+  <body>
+    <%songsList.forEach(song => {%>
+      <ul>
+        <h3><%= song.title %></h3>
+        <ul>
+          <li><%= song.language %></li>
+          <li><%= song.genre %></li>
+        </ul>
+      </ul>
+      <button id="like-button">Like</button>
+      <hr class="solid">      
+    <%})%>
+	<script src="index.js"></script>
+  </body>
+</html>

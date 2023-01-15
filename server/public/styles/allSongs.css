@@ -1,0 +1,11 @@
+hr.solid {
+  border-top: 3px solid #bbb;
+}
+
+li {
+  list-style: none;
+}
+
+#like-button {
+  margin-left: 50px;
+}
