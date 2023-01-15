@@ -21,3 +21,11 @@ exports.get_userProfile = async (req, res) => {
     console.log("error:", e);
   }
 };
+exports.post_postHello = async (req, res) => {
+  // res.json({ uid: req.params.uid });
+  try {
+    res.json("hello"); //save to database
+  } catch(e) {
+    console.log("error:", e);
+  }
+};

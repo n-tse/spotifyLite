@@ -20,17 +20,18 @@
       </thead>
       <tbody>
         <% for(let i = 0; i < songsList.length; i++) { %>
+          <% const songId = songsList[i]._id; %>
           <tr>
             <td><%= i+1 %></td>
             <td><%= songsList[i].title %></td>
             <td><%= songsList[i].language %></td>
             <td><%= songsList[i].genre %></td>
-            <td><button id="like-button">Like</button></td>
+            <td><button id="like-button<%= i+1 %>" onclick="replyClick(this.id, '<%=songId%>')">Like</button></td>
           </tr>     
         <% } %>
 
       </tbody>
     </table>
-	<!-- <script src="index.js"></script> -->
+	<script src="/public/scripts/allSongs.js"></script>
   </body>
 </html>
