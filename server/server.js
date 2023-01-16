@@ -3,13 +3,18 @@ const app = express();
 const path = require('path'); // path module allows us to work with directories and file paths
 const Song = require('./models/Song');
 const routes = require('./routes');
+const userRoutes = require("./routes/UserRouter");
 
 // Configuring .env
 require("dotenv").config({ path: path.join(__dirname, '../.env') });
 
 // Applying middleware
 app.use('/', express.json()); // parse requests with JSON payload/body
+app.use(express.urlencoded({
+  extended: true
+}));
 app.use('/public', express.static(path.join(__dirname, '/public'))); // serve static files. tells express app that all static files are in public directory. If we don't have this, express won't know where to look for css, images, scripts files
+app.use(userRoutes);
 
 // Template engine configuration
 app.set("views", path.join(__dirname, "/views")); // where template files are located. tells express app that HTML/EJS files aka 'views' are in the views folder
