@@ -8,7 +8,7 @@ verifyToken = require("../middlewares/authJWT"),
 } = require("../controllers/auth.controller");
 const UserController = require("../controllers/UserController");
 
-router.post("/register", signup, function (req, res) {
+router.post("/signup", signup, function (req, res) {
 
 });
 
@@ -31,7 +31,7 @@ router.get("/hiddencontent", verifyToken, function (req, res) {
   } else {
     res.status(403)
       .send({
-        message: "Unauthorised access"
+        message: "Unauthorized access"
       });
   }
 });

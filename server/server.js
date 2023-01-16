@@ -27,7 +27,7 @@ app.use('/artist', routes.ArtistRouter);
 
 // app.get('/', (req, res) => { res.json("Hello"); }); // we make a request to the homepage, and the server displays hello to the browser
 
-app.get('/', (req, res) => {
+app.get('/login', (req, res) => {
   res.render('login')
 });
 

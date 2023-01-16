@@ -33,7 +33,7 @@ function btnViewLiked() {
 }
 
 function btnReturnToLogin() {
-  window.location = "./";
+  window.location = "./login";
 }
 
 function btnUserProfile() {

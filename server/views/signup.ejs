@@ -18,22 +18,22 @@
                 <div class="card-body p-5">
                   <h2 class="text-uppercase text-center mb-5">Create an account</h2>
 
-                  <form>
+                  <form action="/signup" method="post">
 
                     <div class="form-outline mb-4">
-                      <input type="text" id="form3Example1cg" class="form-control form-control-lg" placeholder="Username"/>
+                      <input type="text" id="form3Example1cg" class="form-control form-control-lg" placeholder="Username" name="username"/>
                       <!-- <label class="form-label" for="form3Example1cg">Your Name</label> -->
                     </div>
                     <br>
 
                     <div class="form-outline mb-4">
-                      <input type="email" id="form3Example3cg" class="form-control form-control-lg" placeholder="Email Address"/>
+                      <input type="email" id="form3Example3cg" class="form-control form-control-lg" placeholder="Email Address" name="email"/>
                       <!-- <label class="form-label" for="form3Example3cg">Your Email</label> -->
                     </div>
                     <br>
 
                     <div class="form-outline mb-4">
-                      <input type="password" id="form3Example4cg" class="form-control form-control-lg" placeholder="Password"/>
+                      <input type="password" id="form3Example4cg" class="form-control form-control-lg" placeholder="Password" name="password"/>
                       <!-- <label class="form-label" for="form3Example4cg">Password</label> -->
                     </div>
                     <br>
@@ -44,12 +44,14 @@
                     </div> -->
 
                     <div class="d-flex justify-content-center">
-                      <button type="button"
-                        class="btn btn-success btn-block btn-lg gradient-custom-4 text-body" onclick="redirectToAllSongs()">Register</button>
+                      <!-- <button type="button"
+                        class="btn btn-success btn-block btn-lg gradient-custom-4 text-body" onclick="redirectToAllSongs()">Register</button> -->
+                      <input type="submit"
+                        class="btn btn-success btn-block btn-lg gradient-custom-4 text-body" value="Register">
                     </div>
                     <br>
 
-                    <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="/"
+                    <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="/login"
                         class="fw-bold text-body"><u>Login here</u></a></p>
                   </form>
                 </div>
