@@ -19,7 +19,7 @@ exports.signup = (req, res) => {
     } else {
       res.status(200)
         .send({
-          message: "User Registered successfully"
+          message: "User registered successfully"
         })
     }
   });
@@ -40,7 +40,7 @@ exports.signin = (req, res) => {
       if (!user) {
         return res.status(404)
           .send({
-            message: "User Not found."
+            message: "User not found."
           });
       }
 
@@ -54,7 +54,7 @@ exports.signin = (req, res) => {
         return res.status(401)
           .send({
             accessToken: null,
-            message: "Invalid Password!"
+            message: "Invalid Password"
           });
       }
       //signing token with user id
@@ -64,7 +64,7 @@ exports.signin = (req, res) => {
         expiresIn: 86400
       });
 
-      //responding to client request with user profile success message and  access token .
+      //responding to client request with user profile success message and access token .
       res.status(200)
         .send({
           user: {
@@ -72,7 +72,7 @@ exports.signin = (req, res) => {
             username: user.username,
             email: user.email,
           },
-          message: "Login successfull",
+          message: "Login successful",
           accessToken: token,
         });
     });
