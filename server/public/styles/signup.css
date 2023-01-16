@@ -1,3 +1,12 @@
+body {
+  background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
+}
+
+.container {
+  margin-left: 60rem;
+  margin-top: 5rem;
+}
+
 .gradient-custom-3 {
   /* fallback for old browsers */
   background: #84fab0;
