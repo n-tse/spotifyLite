@@ -29,9 +29,11 @@
             <td><button id="like-button<%= i+1 %>" onclick="replyClick(this.id, '<%=songId%>')">Like</button></td>
           </tr>     
         <% } %>
-
       </tbody>
     </table>
+    <button id="btn-viewLiked" onclick="btnViewLiked()">View liked songs</button>
+    <button id="btn-returnToLogin" onclick="btnReturnToLogin()">Return to login</button>
+    <button id="btn-viewProfile" onclick="btnUserProfile()">View user profile</button>
 	<script src="/public/scripts/allSongs.js"></script>
   </body>
 </html>
